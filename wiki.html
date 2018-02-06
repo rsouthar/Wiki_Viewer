@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <head>
   <title>Wiki Viewer</title>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
   <body>
     <h1>Wikipedia Viewer</h1>
+    <div id="search">
+      <form class="search-form">
+        <input type="text" placeholder="Search.." id="wiki">
+        <button id="button" type="sumbit">Search Wikipedia</button>
+        <a href="https://en.wikipedia.org/wiki/Special:Random">I just want some random article</a>
+      </form>
+      <div id="results">
 
-    <h1>By: Richard Southard</h1>
-  </body>
+      </div>
+    </div>
+    <footer>
+      <a href="http://richardsouthard.com">By: Richard Southard</a>
+    </footer>
+    <script src="wiki.js"></script>
+   </body>
 <html/>
