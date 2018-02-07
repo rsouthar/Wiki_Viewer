@@ -1,0 +1,25 @@
+body {
+  background-color: #C6CCDC;
+}
+#results {
+  background-color: #fff;
+  max-width: 60%;
+  margin: 0 20%;
+  min-height: 200px;
+}
+h1 {
+  font-size: 6em;
+}
+h2 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  font-size: 2em;
+  position: static;
+}
