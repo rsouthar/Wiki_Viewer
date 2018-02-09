@@ -14,11 +14,11 @@ function fetch(query) {
 function render(results) {
   var $out = $("#results");
   var html = results.map(function(result) {
-    return '<a class="result"' +
+    return '<ul class="w"<a class="result"' +
            '   href="https://en.wikipedia.org/wiki/'+result.title+'">' +
-           '  <h2 class="text-center">'+result.title+'</h2>' +
-           '  <div class="text-center">'+result.snippet+'</div>' +
-           '</a>';
+           '  <li><h2 class="heading">'+result.title+'</h2>' +
+           '  <div class="info">'+result.snippet+'</div>' +
+           '</li></a></ul>';
   }).join("\n\n");
   $out.html("");
   $(html).appendTo($out);
