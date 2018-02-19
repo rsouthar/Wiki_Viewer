@@ -14,10 +14,9 @@ function fetch(query) {
 function render(results) {
   var $out = $("#results");
   var html = results.map(function(result) {
-    return '<ul class="w"<a class="result"' +
-           '   href="https://en.wikipedia.org/wiki/'+result.title+'">' +
-           '  <li><h2 class="heading">'+result.title+'</h2>' +
-           '  <div class="info">'+result.snippet+'</div>' +
+    return '<ul><a href="https://en.wikipedia.org/wiki/' + result.title +'">' +
+           '<li><h2 class="heading">' + result.title + '</h2>' +
+           '<div class="info">' + result.snippet + '</div>' +
            '</li></a></ul>';
   }).join("\n\n");
   $out.html("");
